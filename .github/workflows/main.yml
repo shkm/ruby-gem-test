@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+<<<<<<< Updated upstream
+=======
+      - "[0-9]-[0-9]-[0-9]"
+>>>>>>> Stashed changes
 
 permissions:
   contents: write
@@ -19,3 +23,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
+          target-branch: "${{GITHUB_REF_NAME}}"
