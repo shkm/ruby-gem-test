@@ -20,4 +20,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           command: manifest
-          target-branch: "${{GITHUB_REF_NAME}}"
+          target-branch: "${{ github.ref_name }}"
